@@ -33,7 +33,7 @@ public class Bishop : Piece
         possibleMoves.AddRange(Grandmaster.instance.ChessRaycast(this, new Vector4(-1, 0, -1, 0)));
         possibleMoves.AddRange(Grandmaster.instance.ChessRaycast(this, new Vector4(-1, 0, 0, -1)));
         possibleMoves.AddRange(Grandmaster.instance.ChessRaycast(this, new Vector4(0, -1, -1, 0)));
-        possibleMoves.AddRange(Grandmaster.instance.ChessRaycast(this, new Vector4(0, -1, 0, 1)));
+        possibleMoves.AddRange(Grandmaster.instance.ChessRaycast(this, new Vector4(0, -1, 0, -1)));
         possibleMoves.AddRange(Grandmaster.instance.ChessRaycast(this, new Vector4(0, 0, -1, -1)));
 
         return possibleMoves;
